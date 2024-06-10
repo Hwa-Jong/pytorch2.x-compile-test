@@ -2,7 +2,6 @@ import torch
 import torchvision
 import time
 import torchvision.models as models
-import torchvision.datasets as datasets1
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import numpy as np
