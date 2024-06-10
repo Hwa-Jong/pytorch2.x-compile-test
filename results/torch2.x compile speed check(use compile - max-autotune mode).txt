@@ -1,0 +1,43 @@
+Epoch 1, Train Loss: 0.1611167937517166, Validation Loss: 0.5547046776175499, Validation Accuracy: 80.92%
+Epoch 1 time: 181.01s
+Epoch 2, Train Loss: 0.8412571549415588, Validation Loss: 0.4291409372597933, Validation Accuracy: 85.32%
+Epoch 2 time: 130.09s
+Epoch 3, Train Loss: 0.22239366173744202, Validation Loss: 0.3965948694139719, Validation Accuracy: 86.37%
+Epoch 3 time: 130.12s
+Epoch 4, Train Loss: 0.10922584682703018, Validation Loss: 0.35630475979596377, Validation Accuracy: 88.57%
+Epoch 4 time: 129.49s
+Epoch 5, Train Loss: 0.19440604746341705, Validation Loss: 0.30124093904197213, Validation Accuracy: 90.34%
+Epoch 5 time: 130.00s
+Epoch 6, Train Loss: 0.219182550907135, Validation Loss: 0.3329676002178341, Validation Accuracy: 89.63%
+Epoch 6 time: 129.74s
+Epoch 7, Train Loss: 0.20892658829689026, Validation Loss: 0.30486671236958357, Validation Accuracy: 90.93%
+Epoch 7 time: 129.72s
+Epoch 8, Train Loss: 0.2988239824771881, Validation Loss: 0.35666238901407926, Validation Accuracy: 90.12%
+Epoch 8 time: 131.20s
+Epoch 9, Train Loss: 0.008205721154808998, Validation Loss: 0.32727081998777574, Validation Accuracy: 90.91%
+Epoch 9 time: 129.54s
+Epoch 10, Train Loss: 0.04135676473379135, Validation Loss: 0.35143476513500793, Validation Accuracy: 90.61%
+Epoch 10 time: 129.85s
+Epoch 11, Train Loss: 0.041899073868989944, Validation Loss: 0.35494536127056925, Validation Accuracy: 90.39%
+Epoch 11 time: 129.78s
+Epoch 12, Train Loss: 0.09386905282735825, Validation Loss: 0.35964178232215344, Validation Accuracy: 90.85%
+Epoch 12 time: 129.90s
+Epoch 13, Train Loss: 0.24659645557403564, Validation Loss: 0.380096951804962, Validation Accuracy: 90.22%
+Epoch 13 time: 129.78s
+Epoch 14, Train Loss: 0.003735343459993601, Validation Loss: 0.3755768003305886, Validation Accuracy: 90.43%
+Epoch 14 time: 129.40s
+Epoch 15, Train Loss: 0.16041497886180878, Validation Loss: 0.3727507334693335, Validation Accuracy: 90.89%
+Epoch 15 time: 131.00s
+Epoch 16, Train Loss: 0.0666608139872551, Validation Loss: 0.3716459800377488, Validation Accuracy: 90.48%
+Epoch 16 time: 129.89s
+Epoch 17, Train Loss: 0.015240991488099098, Validation Loss: 0.4055154933057114, Validation Accuracy: 90.76%
+Epoch 17 time: 129.00s
+Epoch 18, Train Loss: 0.0038473992608487606, Validation Loss: 0.43050382034506185, Validation Accuracy: 90.36%
+Epoch 18 time: 131.23s
+Epoch 19, Train Loss: 0.4560771584510803, Validation Loss: 0.4116024423561059, Validation Accuracy: 90.11%
+Epoch 19 time: 130.08s
+Epoch 20, Train Loss: 0.017322508618235588, Validation Loss: 0.41328373910492516, Validation Accuracy: 90.2%
+Epoch 20 time: 129.72s
+
+
+Total training time: 00h 44m 10s
