@@ -81,7 +81,7 @@ def get_report(data:dict, save_graph):
     if save_graph:
         plt.figure(figsize=(10, 6))
         plt.title('Time per epoch')
-        plt.xlabel('Epoch')
+        plt.xlabel('Epochs')
         plt.ylabel('Time(s)')
         
     total_times = []
