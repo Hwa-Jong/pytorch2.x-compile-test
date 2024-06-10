@@ -31,7 +31,7 @@ def main():
     print('< Results >')
     for k, v in report.items():
         print(k)
-        print(f'Median time : {v[0]} | Total time : {v[1]} | Accuracy : {v[2]}\n')
+        print(f'Median time : {v[0]} | Total time : {v[1]}| Speed up rate : {v[3]}| Accuracy : {v[2]}\n')
     
     print('finish')
     
@@ -84,10 +84,10 @@ def get_report(data:dict, save_graph):
         plt.xlabel('Epoch')
         plt.ylabel('Time(s)')
         
+    total_times = []
     for k, v in data.items():
         acc_list = []
         time_list = []
-        total_time = 0.0
         for _k, _v in v.items():
             if _k.lower() != 'total':
                 acc_list.append(_v[0])
@@ -102,8 +102,14 @@ def get_report(data:dict, save_graph):
         if save_graph:
             plt.plot(range(1, 21), time_list, label=key)
     
-        report[key] = [np.median(time_list), total_time, acc_list.max()]
+        median_time = np.median(time_list)
+        report[key] = [median_time, total_time, acc_list.max()]
+        total_times.append(median_time)
         
+    # add speed up rate
+    max_time = max(total_times)
+    for k, v in report.items():
+        v.append(np.round(max_time/v[0], 3))
         
     if save_graph:
         plt.xticks(range(1, len(time_list)+1))
