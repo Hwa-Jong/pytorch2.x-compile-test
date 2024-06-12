@@ -27,7 +27,7 @@ PROJ_DIR = Dockefile 이 있는 경로
 
 ```shell
 # % PATH% 상단 표 참고
-> docker run -it --gpus all -v %PATH%:/workspace torch2 .
+> docker run -it --gpus all --shm-size=8G -v %PATH%:/workspace torch2 .
 # example - ubuntu
-# docker run -it --gpus all -v $(pwd):/workspace torch2 .
+# docker run -it --gpus all --shm-size=8G -v $(pwd):/workspace torch2 .
 ```
