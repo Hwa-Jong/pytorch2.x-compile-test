@@ -5,6 +5,7 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 from tqdm import tqdm
 
@@ -35,11 +36,13 @@ def main(use_compile=False, mode=None):
     ])
 
     # CIFAR-10 학습 데이터셋 다운로드 및 로더 설정
-    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=False, transform=transform)
+    need_download = True if not os.path.exists('./data') else False
+    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=need_download, transform=transform)
     train_loader = torch.utils.data.DataLoader(trainset, batch_size=16, shuffle=True, num_workers=8, drop_last=True)
 
     # CIFAR-10 검증 데이터셋 다운로드 및 로더 설정
-    validset = torchvision.datasets.CIFAR10(root='./data', train=False, download=False, transform=transform)
+    need_download = True if not os.path.exists('./data') else False
+    validset = torchvision.datasets.CIFAR10(root='./data', train=False, download=need_download, transform=transform)
     valid_loader = torch.utils.data.DataLoader(validset, batch_size=16, shuffle=False, num_workers=8, drop_last=True)
 
 
